@@ -1,0 +1,523 @@
+/* fonts */
+$font-main: 'Questrial', 'Raleway', helvetica, sans-serif;
+$font-secondary: 'Raleway', helvetica, arial, sans-serif;
+
+/* colours */
+$primary-color: #FFC132;
+$secondary-color: #0BA094;
+
+
+html {
+  max-width: 100%;
+  background: #f2f2f2;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---- footer ---- */
+.footer-icons {
+  color: $secondary-color;
+  font-size: 20pt;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.fa {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+/* ---- site ---- */
+
+/* ---- nav menu ---- */
+main {
+  font-family: $font-main;
+}
+
+nav {
+  text-transform: uppercase;
+  font-family: $font-secondary;
+  color: $secondary-color;
+  padding-top: 37px;
+  li, h3 {
+    display: inline;
+  }
+  ul {
+    margin: 0px;
+    a {
+      float: right;
+      padding: 20px 0 0px 50px;
+      text-decoration: none;
+      list-style: none;
+      color: $secondary-color;
+      font-size: 14pt;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+  }
+  a {
+    &:hover {
+      color: #FF9A99;
+      transition: all 0.5s ease;
+    }
+    &:active, &:focus {
+      font-weight: 800;
+    }
+  }
+  li h3 {
+    font-size: 28pt;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+}
+
+hr {
+  border-color: black;
+  border-width: 2px;
+  margin: 5px 0;
+  color: black;
+}
+
+/* ---- mobile nav menu ---- */
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    font-family: $font-secondary;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $secondary-color;
+    overflow-y: hidden;
+    transition: 0.5s;
+    li, a {
+      padding: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      list-style: none;
+      font-size: 40px;
+      letter-spacing: 3pt;
+      color: #f2f2f2;
+      display: block;
+      transition: 0.3s;
+    }
+  }
+
+.overlay-content {
+  position: relative;
+  top: 23%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mobilenav {
+  color: $secondary-color;
+  font-family: $font-secondary;
+  p {
+  margin: 0;
+  padding-top: 35px;
+  float: right;
+  font-size: 30px;
+  cursor: pointer
+  }
+  h3 {
+  float: left;
+  font-size: 28pt;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  color: $secondary-color;
+  padding-top: 37px;
+  }
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  font-weight: 500;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 60px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* ----- hello / about section ----- */
+
+.about {
+  // background: #f2f2f2;
+  padding-top: 50px;  
+  width: 100%;
+}
+
+/* introduction */
+
+.colour-block {
+  background-color: $secondary-color;
+  margin: 0 0 0 10%;
+  width: 70%;
+  height: 170px;
+  h3 {
+    text-align: right;
+    font-size: 24pt;
+    font-weight: 500;
+    padding: 10% 6% 0 25%;
+    margin-right: -25%;
+  }
+  hr {
+    text-align: right;
+    margin-right: -15%;
+    margin-left: 70%;
+    border-color: $primary-color;
+    border-width: 4px;
+    color: $primary-color;
+  }
+}
+
+.abouttext {
+  padding-right: 8%;
+  height: 100%;
+  text-align: justify;
+}
+
+/* skills */
+.skillset {
+  padding: 20px; 
+}
+.skills {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  img {
+    width: 80%;
+  }
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: 1pt;
+  }
+  &:hover {
+    color: $secondary-color;
+    transition: all 0.6s ease;
+    box-shadow: 0 4px 0 0 $primary-color, 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.dotted hr, .dotted02 hr {
+  margin: 0 15%;
+  border-width: 0;
+  color: $primary-color;
+  border-color: $primary-color;
+  border-top: dotted 4px;
+}
+
+.dotted02 hr {
+  margin-top: 30px
+}
+
+/* ----- work section ----- */
+.portfolio-grid {
+  // background-color: #a2a2a2;
+  width: 100%;
+}
+
+/* portfolio filter buttons */
+.filter-menu {
+  padding: 30px 0 15px 0;
+  text-align: center;
+  .button {
+    font-family: $font-main;
+    display: inline-block;
+    margin: 8px 30px;
+    padding: 0;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 600;
+    line-height: 1px;
+    letter-spacing: .1rem;
+    text-transform: none;
+    text-decoration: none;
+    white-space: none;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    &:focus, &:active {
+      transition: all 0.5s ease;
+      border-bottom: 3px solid $secondary-color;
+    }
+  }
+}
+
+/* portfolio filter */
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: white;
+  margin: 10px;
+  font-family: 'Raleway', helvetica, arial, sans-serif;
+  color: #202020;
+  transition: all 0.3s ease;
+  img {
+    padding: 10px 10px 0 10px;
+    width: 100%;
+  }
+  h4 {
+    font-size: 16pt;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 10px 5px 10px;
+    margin: 0;
+  }
+  hr {
+    margin: 0 10px;
+    border-color: $primary-color;
+    border-width: 1.5px;
+    color: $primary-color;
+  }
+  p {
+    font-size: 10pt;
+    text-align: left;;
+    text-transform: uppercase;
+    padding: 5px 10px;
+  }
+  &:hover {
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Hide all elements by default */
+.column {
+  display: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+   -moz-animation-delay: 3.5s;
+   -webkit-animation-delay: 3.5s;
+   -o-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+  display: block;
+}
+
+
+/* ----- say hi / contact section ----- */
+.abouttext {
+  i {
+    font-size: 14pt;
+  }
+  p {
+    font-size: 14pt;
+  }
+}
+
+
+
+/* ---- media queries ---- */
+/* correcting Skeleton CSS */
+@media (min-width: 550px) {
+  .one-third {
+    margin-left: 0;
+  }
+}
+
+/* ---- mobile ---- */
+@media only screen and (min-width:320px) and (max-width:640px) {
+  /* ---- nav ---- */
+  nav {
+    display: none
+  }
+
+  .mobilenav {
+    p {
+    padding-top: 18px;
+    }
+    h3 {
+    padding-top: 25px;
+    font-size: 22pt;
+    }
+  }
+
+.filter-menu {
+  margin: 20px 0;
+  .button {
+    font-size: 18pt;
+    margin: 8px 23px;
+  }
+}
+
+.overlay-content {
+  top: 10%;
+}
+
+.overlay .closebtn {
+  top: -10px;
+  right: 15px;
+}
+
+/* ----- introduction ----- */
+
+.about {
+  padding-top: 30px;  
+}
+.colour-block {
+  margin-bottom: 30px;
+  height: 220px;
+  h3 {
+    text-align: right;
+    font-size: 23pt;
+    font-weight: 500;
+    padding: 15% 6% 0 25%;
+    margin-right: -25%;
+  }
+  hr {
+    text-align: right;
+    margin-right: -15%;
+    margin-left: 70%;
+    border-color: $primary-color;
+    border-width: 4px;
+    color: $primary-color;
+  }
+}
+
+.skillset {
+  padding: 0 20px 20px 20px;
+}
+
+.skills {
+  padding: 10px;
+}
+
+.dotted hr {
+  margin: 0 10%;
+}
+
+.dotted02 hr {
+  margin: 10% 10%;
+}
+
+.abouttext {
+  padding-right: 0;
+}
+
+  /* ---- footer ---- */
+  .footer-icons {
+    font-size: 20pt;
+    margin: 30px 0;
+  }
+
+  .fa {
+    margin: 0 10px;
+  }
+
+  /* ---- override column structure ---- */ 
+  .one-third.column {
+    width: 100%;
+  }
+}
+
+
+/* ---- large mobile ---- */
+@media only screen and (min-width:640px) and (max-width:768px) {
+  /* ---- nav ---- */
+  nav {
+    display: none
+  }
+
+  .overlay-content {
+    top: 15%;
+  }
+
+  .overlay .closebtn {
+    top: -10px;
+    right: 48px;
+  }
+
+  /* ---- override column structure ---- */
+  .one-third.column {
+    width: 50%;
+  }
+
+}
+
+/* ---- phablet ---- */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  /* ---- nav ---- */
+  nav {
+    display: none
+  }
+
+  /* ---- override column structure ---- */
+  .one-third.column {
+    width: 33.33%;
+  }
+}
+
+/* ---- tablet ---- */
+@media only screen and (min-width:1024px) and (max-width:1365px) {
+
+  /* ---- nav ---- */
+  .mobilenav {
+    display: none
+  }
+
+  /* ---- override column structure ---- */
+  .one-third.column {
+    width: 33.33%;
+  }
+}
+
+/* ---- desktop ---- */
+@media only screen and (min-width:1366px) and (max-width:1599px) {
+  /* ---- nav ---- */
+  .mobilenav {
+    display: none
+  }
+
+  /* ---- override column structure ---- */
+  .one-third.column {
+    width: 33.33%;
+  }
+}
+
+/* ---- large desktop ---- */
+@media only screen and (min-width:1600px) and (max-width:1900px) {
+  /* ---- nav ---- */
+  .mobilenav {
+    display: none
+  }
+
+  /* ---- override column structure ---- */
+  .one-third.column {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  /* ---- nav ---- */
+  .mobilenav {
+    display: none
+  }
+
+  /* ---- override column structure ---- */
+  .one-third.column {
+    width: 25%;
+  }
+
+}

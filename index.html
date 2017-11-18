@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- meta data -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="portfolio site">
+	<meta name="keywords" content="portfolio, portfolio website, web design, web developer, graphic design, designer, design">
+	<meta name="author" content="Leandra de Sousa">
+
+  <!-- title -->
+	<title>Lea de Sousa</title>
+
+  <!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Questrial|Raleway:400,500,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/vendor/skeleton.css">
+  <link rel="stylesheet" href="css/vendor/icons/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>	
+<div class="container">
+
+<header>
+  <!-- mobile and tablet nav menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <li><a href="#sayhi">say hi</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#hello">hello</a></li>
+
+    </div>
+  </div>
+
+  <span class="mobilenav" onclick="openNav()">
+    <div class="row">
+      <div class="twelve columns">
+        <h3><b>Lea</b> de Sousa</h3>
+        <p>&#9776;</p>
+        <div class="clearfix"></div>
+        <hr>
+      </div>
+    </div> 
+  </span>
+
+  <!-- desktop nav menu -->
+	<nav>
+		<div class="row">
+			<div class="twelve columns">
+				<ul>					
+					<li><h3><b>Lea</b> de Sousa</h3></li>
+					<li><a href="#sayhi">say hi</a></li>
+					<li><a href="#work">work</a></li>
+          <li><a href="#hello">hello</a></li>
+				</ul>
+				<hr>
+			</div>
+		</div>
+	</nav>
+</header>
+
+<main>
+  <!-- about section -->
+  <a name="hello"></a>
+
+  <section class="about">
+
+    <div class="introduction">
+      <div class="row">
+        <div class="twelve columns">
+
+          <div class="five columns">
+            <div class="colour-block">
+              <h3>Let's build something great together</h3>
+                <hr>
+            </div>  
+          </div>
+
+          <div class="seven columns">
+            <div class="abouttext">
+              <p>I’m Lea - a graphic designer, illustrator, web developer and professional cat lady from Cape Town in sunny South Africa. I use visual storytelling to transform complex information and ideas into powerful connections between people and your brand. I write code for the web and favour semantically structured markup, accessibility and well designed CSS. When I am not designing or coding mastermind projects, I am tending to my dying plants and my overly affectionate four cats. A few note-worthy skills I have:
+
+              <!-- <br/><br/>I’d love to hear from you, even more so if it has to do with work. So drop me a mail or give me a shout and we can talk about interesting things like design or cats.</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="dotted"><hr></div> -->
+
+    <div class="skillset">
+      <div class="row">
+        <div class="four columns">
+          <div class="skills">
+            <img src="img/skills-print.png" alt="print skills">
+              <h3>PRINT</h3>
+                <p>illustration, poster design, invitations, editorial design, book covers and layouts, greeting cards, packaging, textile prints </p>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="skills">
+            <img src="img/skills-design.png" alt="design skills">
+              <h3>DESIGN</h3>
+                <p>logo design, branding, typography, photo manipulation, animation, cinematography, marketing &amp; social media content</p>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="skills">
+            <img src="img/skills-web.png" alt="web skills">
+              <h3>WEB</h3>
+                <p>UX/UI, interface design, HTML, CSS/SCSS, JavaScript &amp; jQuery, WordPress, Vue.js, some other bullshit placed here cherries </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- work section -->
+  <a name="work"></a>
+
+  <div class="dotted"><hr></div>
+
+  <section class="portfolio-grid">
+    <article class="filter-menu">
+      <div class="row">
+        <div class="twelve columns">
+        
+          <button class="button button1" type="button" onclick="filterSelection('all')" name="category">everything</button>
+          <button class="button button1" type="button" onclick="filterSelection('print')" name="category">print</button>
+          <button class="button button1" type="button" onclick="filterSelection('web')" name="category">web</button>
+          <button class="button button1" type="button" onclick="filterSelection('animation')" name="category">animation</button>
+          
+        </div>
+      </div>
+    </article>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Mountains">
+        <h4>FOD 10 Year Poster</h4>
+          <hr>
+            <p>Illustration</p>
+    </div>
+  </div>
+
+  <div class="one-third column web">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Godchecker Redesign</h4>
+          <hr>
+            <p>Web design &amp; UX/UI</p>
+    </div>
+  </div>
+
+  <div class="one-third column animation">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Film Showreel</h4>
+          <hr>
+            <p>Animation</p>
+    </div>
+  </div>
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Fruitea Tea</h4>
+          <hr>
+            <p>branding &amp; logo</p>
+    </div>
+  </div>
+
+  <div class="one-third column web print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>London Donut Co.</h4>
+          <hr>
+            <p>Web design &amp; branding</p>
+    </div>
+  </div>
+
+  <div class="one-third column web">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Pantone website</h4>
+          <hr>
+            <p>Web design &amp; UX/UI</p>
+    </div>
+  </div>
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Manhattan Sweets</h4>
+          <hr>
+            <p>Packaging</p>
+    </div>
+  </div>
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Night of 1000 Drawings</h4>
+          <hr>
+            <p>Marketing campaign</p>
+    </div>
+  </div>
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Generation Y</h4>
+          <hr>
+            <p>magazine &amp; editorial</p>
+    </div>
+  </div>
+
+  <div class="one-third column web">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Color Factory Co.</h4>
+          <hr>
+            <p>Experimental web design</p>
+    </div>
+  </div>
+
+  <div class="one-third column animation">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Self promo video</h4>
+          <hr>
+            <p>Animation</p>
+    </div>
+  </div>
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Ticket to Tomorrow</h4>
+          <hr>
+            <p>Invitation</p>
+    </div>
+  </div>
+
+  <div class="one-third column print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>Corporate Awards</h4>
+          <hr>
+            <p>Logo &amp; illustration</p>
+    </div>
+  </div>
+
+  <div class="one-third column web">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>WordPress theme</h4>
+          <hr>
+            <p>WordPress</p>
+    </div>
+  </div>
+
+  <div class="one-third column web print">
+    <div class="content">
+      <img src="img/marshmallow-01.jpg" alt="Lights">
+        <h4>SophieLove</h4>
+          <hr>
+            <p>Branding &amp; UX/UI</p>
+    </div>
+  </div>
+  <!-- end grid -->
+
+  </div>
+  </section>  
+
+  <div class="dotted02"><hr></div>
+
+  <!-- say hi / contact section -->
+  <a name="sayhi"></a>
+
+  <section class="about">
+
+    <div class="introduction">
+      <div class="row">
+        <div class="twelve columns">
+
+          <div class="five columns">
+            <div class="colour-block">
+              <h3>I make things work. Let me show you.</h3>
+                <hr>
+            </div>  
+          </div>
+
+          <div class="seven columns">
+            <div class="abouttext">
+              <p>I’d love to hear from you, even more so if it has to do with work. So drop me a mail or give me a shout and we can talk about interesting things like design or cats.</p>
+
+              <p><i class="fa fa-phone" aria-hidden="true"></i>+27 81 5000 896</p>
+
+              <p><i class="fa fa-envelope" aria-hidden="true"></i>thisisleahere@gmail.com</p>
+              
+              <!-- <a href="mailto:no-one@no-where.com?subject=Something to filter on">Email me</a> -->
+              <button class="resume-button">download resume</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="dotted"><hr></div> -->
+
+    
+      </div>
+    </div>
+  </section>
+
+</main>
+
+	<footer>
+    <!-- footer icons -->
+    <div class="footer-icons">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-behance" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+    </div>
+	</footer>
+
+</div>
+
+<!-- script links -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
