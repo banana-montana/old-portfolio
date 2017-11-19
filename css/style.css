@@ -40,17 +40,15 @@ nav {
       list-style: none;
       color: #0BA094;
       font-size: 14pt;
-      -webkit-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
-      font-weight: 500; }
-  nav a:hover {
-    color: #FF9A99;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-  nav a:active, nav a:focus {
-    font-weight: 800; }
+      font-weight: 500;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      nav ul a:hover {
+        color: #FFC132;
+        -webkit-transition: all 0.6s ease;
+        -o-transition: all 0.6s ease;
+        transition: all 0.6s ease; }
   nav li h3 {
     font-size: 28pt;
     letter-spacing: 2px;
@@ -71,7 +69,18 @@ hr {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #0BA094;
+  background: #0BA094;
+  /* Old browsers */
+  background: -webkit-linear-gradient(left top, #0BA094, #FFC132);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #0BA094, #FFC132);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-120deg, #0BA094, #FFC132);
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(210deg, #0BA094, #FFC132);
+  background: -o-linear-gradient(210deg, #0BA094, #FFC132);
+  background: linear-gradient(-120deg, #0BA094, #FFC132);
+  /* Standard */
   overflow-y: hidden;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -154,8 +163,10 @@ hr {
 
 .abouttext {
   padding-right: 8%;
-  height: 100%;
-  text-align: justify; }
+  height: 100%; }
+  .abouttext p {
+    font-size: 16.5px;
+    text-align: justify; }
 
 /* skills */
 .skillset {
@@ -165,9 +176,9 @@ hr {
   width: 100%;
   padding: 20px;
   text-align: center;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
   .skills img {
     width: 80%; }
   .skills h3 {
@@ -179,9 +190,7 @@ hr {
     color: #0BA094;
     -webkit-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    -webkit-box-shadow: 0 4px 0 0 #FFC132, 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 0 0 #FFC132, 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
+    transition: all 0.6s ease; }
 
 .dotted hr, .dotted02 hr {
   margin: 0 15%;
@@ -227,6 +236,15 @@ hr {
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
       border-bottom: 3px solid #0BA094; }
+    .filter-menu .button ::after {
+      content: '';
+      display: block;
+      -webkit-transition: width 0.4s;
+      -o-transition: width 0.4s;
+      transition: width 0.4s;
+      border-bottom: 0px solid #0BA094; }
+    .filter-menu .button:hover::after {
+      border-bottom: 3px solid #0BA094; }
 
 /* portfolio filter */
 * {
@@ -261,11 +279,11 @@ hr {
     text-transform: uppercase;
     padding: 5px 10px; }
   .content:hover {
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); }
+    -webkit-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15), 0 6px 6px 0 rgba(0, 0, 0, 0.15); }
 
 /* Hide all elements by default */
 .column {
@@ -281,9 +299,6 @@ hr {
 
 /* ----- say hi / contact section ----- */
 .abouttext i {
-  font-size: 14pt; }
-
-.abouttext p {
   font-size: 14pt; }
 
 /* ---- media queries ---- */
@@ -341,6 +356,8 @@ hr {
     margin: 10% 10%; }
   .abouttext {
     padding-right: 0; }
+    .abouttext p {
+      font-size: 12pt; }
   /* ---- footer ---- */
   .footer-icons {
     font-size: 20pt;

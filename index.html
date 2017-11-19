@@ -31,10 +31,9 @@
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-        <li><a href="#sayhi">say hi</a></li>
-        <li><a href="#work">work</a></li>
         <li><a href="#hello">hello</a></li>
-
+        <li><a href="#work">work</a></li>
+        <li><a href="#sayhi">say hi</a></li>
     </div>
   </div>
 
@@ -135,10 +134,10 @@
       <div class="row">
         <div class="twelve columns">
         
-          <button class="button button1" type="button" onclick="filterSelection('all')" name="category">everything</button>
-          <button class="button button1" type="button" onclick="filterSelection('print')" name="category">print</button>
-          <button class="button button1" type="button" onclick="filterSelection('web')" name="category">web</button>
-          <button class="button button1" type="button" onclick="filterSelection('animation')" name="category">animation</button>
+          <button class="button" type="button" onclick="filterSelection('all')" name="category">everything</button>
+          <button class="button" type="button" onclick="filterSelection('print')" name="category">print</button>
+          <button class="button" type="button" onclick="filterSelection('web')" name="category">web</button>
+          <button class="button" type="button" onclick="filterSelection('animation')" name="category">animation</button>
           
         </div>
       </div>
@@ -308,12 +307,26 @@
             <div class="abouttext">
               <p>I’d love to hear from you, even more so if it has to do with work. So drop me a mail or give me a shout and we can talk about interesting things like design or cats.</p>
 
-              <p><i class="fa fa-phone" aria-hidden="true"></i>+27 81 5000 896</p>
+              <div class="six columns">
+                <button>
+                  <a href="mailto:leadesousa@hotmail.com?Subject=Hello" target="_top""><i class="fa fa-envelope" aria-hidden="true"></i>drop a mail</a>
+                </button>
+              </div>
 
-              <p><i class="fa fa-envelope" aria-hidden="true"></i>thisisleahere@gmail.com</p>
-              
-              <!-- <a href="mailto:no-one@no-where.com?subject=Something to filter on">Email me</a> -->
-              <button class="resume-button">download resume</button>
+              <div class="six columns">
+                 <button>
+                  <a href="tel:+27815000896"><i class="fa fa-phone" aria-hidden="true"></i>give a shout</a>
+                </button>
+              </div>
+
+
+              <div class="twelve columns">
+                <button>
+                  <a href="images/Portfolio.pdf" download><i class="fa fa-download"></i>download resume</a>
+                </button>
+              </div>
+
+
             </div>
           </div>
 
