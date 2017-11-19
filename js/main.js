@@ -62,12 +62,95 @@ $('.button1').click(function(){
 });
 
 
-var rightdiv = document.getElementsByClassName('abouttext')[0].offsetHeight;
-var leftdiv = document.getElementsByClassName('colour-block')[0].offsetHeight;
-if (leftdiv > rightdiv) {
-  document.getElementsByClassName('abouttext')[0].style.height=leftdiv;
-}
-else
-{
-    document.getElementsByClassName('colour-block')[0].style.height=rightdiv;
-};
+// code for replicating height of a div in about section
+// var rightdiv = document.getElementsByClassName('abouttext')[0].offsetHeight;
+// var leftdiv = document.getElementsByClassName('colour-block')[0].offsetHeight;
+// if (leftdiv > rightdiv) {
+//   document.getElementsByClassName('abouttext')[0].style.height=leftdiv;
+// }
+// else
+// {
+//     document.getElementsByClassName('colour-block')[0].style.height=rightdiv;
+// };
+
+// Modal - print projects
+
+// FOD 10 Year Poster
+$(document).on('click', '.print01', function (event) {
+    event.preventDefault();
+    $('#print01').iziModal('open');
+});
+
+$('#print01').iziModal({
+    title: '<h3>FOD 10 Year Poster</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+});
+
+// Godchecker Redesign
+$(document).on('click', '.web01', function (event) {
+    event.preventDefault();
+    $('#web01').iziModal('open');
+});
+
+$('#web01').iziModal({
+    title: '<h3>Godchecker Redesign</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+});
+
+// Fruitea
+$(document).on('click', '.print02', function (event) {
+    event.preventDefault();
+    $('#print02').iziModal('open');
+});
+
+$('#print02').iziModal({
+    title: '<h3>Fruitea Tea</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+});
+
+// London Donut Co.
+$(document).on('click', '.web02', function (event) {
+    event.preventDefault();
+    $('#web02').iziModal('open');
+});
+
+$('#web02').iziModal({
+    title: '<h3>London Donut Co.</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+});
+
+// London Donut Co.
+$(document).on('click', '.web03', function (event) {
+    event.preventDefault();
+    $('#web03').iziModal('open');
+});
+
+$('#web03').iziModal({
+    title: '<h3>Pantone website</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+});

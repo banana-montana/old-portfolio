@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/vendor/normalize.css">
   <link rel="stylesheet" href="css/vendor/skeleton.css">
   <link rel="stylesheet" href="css/vendor/icons/css/font-awesome.min.css">
+  <link rel="stylesheet" href="js/iziModal-master/css/iziModal.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -49,19 +50,21 @@
   </span>
 
   <!-- desktop nav menu -->
-	<nav>
-		<div class="row">
-			<div class="twelve columns">
-				<ul>					
+
+  <div class="row">
+  	<div class="twelve columns">
+      <nav>
+  			<ul>					
 					<li><h3><b>Lea</b> de Sousa</h3></li>
 					<li><a href="#sayhi">say hi</a></li>
 					<li><a href="#work">work</a></li>
           <li><a href="#hello">hello</a></li>
-				</ul>
-				<hr>
-			</div>
-		</div>
-	</nav>
+  			</ul>
+    			<hr>
+      </nav>	
+  	</div>
+  </div>
+
 </header>
 
 <main>
@@ -76,7 +79,7 @@
 
           <div class="five columns">
             <div class="colour-block">
-              <h3>Let's build something great together</h3>
+              <h3>Let's <b>build</b> something great <b>together</b></h3>
                 <hr>
             </div>  
           </div>
@@ -148,19 +151,41 @@
 
   <div class="one-third column print">
     <div class="content">
-      <img src="img/marshmallow-01.jpg" alt="Mountains">
-        <h4>FOD 10 Year Poster</h4>
-          <hr>
-            <p>Illustration</p>
+      <a class="print01">
+        <img src="img/print02.jpg" alt="poster design">
+          <h4>FOD 10 Year Poster</h4>
+            <hr>
+              <p>Illustration</p>
+                <!-- Modal structure -->
+                <div id="print01">
+                  <div class="twelve columns">
+                    <img src="img/print01.jpg">
+                  <!-- Page content -->
+                  <p class="modal-styling">10 Year Celebratory Magazine Poster for Friends of Design. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+              </div>
+      </a>
     </div>
   </div>
 
   <div class="one-third column web">
     <div class="content">
-      <img src="img/marshmallow-01.jpg" alt="Lights">
+      <a class="web01">
+      <img src="img/godchecker01.jpg" alt="godchecker">
         <h4>Godchecker Redesign</h4>
           <hr>
             <p>Web design &amp; UX/UI</p>
+              <!-- Modal structure -->
+              <div id="web01">
+                <div class="twelve columns">
+                  <img src="img/godchecker02.jpg">
+                <!-- Page content -->
+                <p class="modal-styling">10 Year Celebratory Magazine Poster for Friends of Design. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                <button><a href="https://thisisleahere.github.io/godchecker-redesign/">view the site</a></button>
+                </div>
+            </div>
+      </a>
     </div>
   </div>
 
@@ -175,28 +200,64 @@
 
   <div class="one-third column print">
     <div class="content">
-      <img src="img/marshmallow-01.jpg" alt="Lights">
-        <h4>Fruitea Tea</h4>
-          <hr>
-            <p>branding &amp; logo</p>
+      <a class="print02">
+        <img src="img/fruitea01.jpg" alt="Lights">
+          <h4>Fruitea Tea</h4>
+            <hr>
+              <p>branding &amp; logo</p>
+              <!-- Modal structure -->
+              <div id="print02">
+                <div class="twelve columns">
+                  <img src="img/fruitea01.jpg">
+                <!-- Page content -->
+                <p class="modal-styling">10 Year Celebratory Magazine Poster for Friends of Design. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                <button><a href="https://thisisleahere.github.io/godchecker-redesign/">view the site</a></button>
+                </div>
+            </div>
+      </a>
     </div>
   </div>
 
   <div class="one-third column web print">
     <div class="content">
-      <img src="img/marshmallow-01.jpg" alt="Lights">
+      <a class="web02">
+      <img src="img/london.jpg" alt="London Donut Co.">
         <h4>London Donut Co.</h4>
           <hr>
             <p>Web design &amp; branding</p>
+            <!-- Modal structure -->
+              <div id="web02">
+                <div class="twelve columns">
+                  <img src="img/london.jpg">
+                <!-- Page content -->
+                <p class="modal-styling">10 Year Celebratory Magazine Poster for Friends of Design. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                <button><a href="https://thisisleahere.github.io/godchecker-redesign/">view the site</a></button>
+                </div>
+            </div>
+      </a>
     </div>
   </div>
 
   <div class="one-third column web">
     <div class="content">
-      <img src="img/marshmallow-01.jpg" alt="Lights">
-        <h4>Pantone website</h4>
-          <hr>
-            <p>Web design &amp; UX/UI</p>
+      <a class="web03">
+        <img src="img/pantone.jpg" alt="Pantone redesign">
+          <h4>Pantone website</h4>
+            <hr>
+              <p>Web design &amp; UX/UI</p>
+              <!-- Modal structure -->
+              <div id="web03">
+                <div class="twelve columns">
+                  <img src="img/pantone1.jpg">
+                <!-- Page content -->
+                <p class="modal-styling">10 Year Celebratory Magazine Poster for Friends of Design. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <button><a href="https://thisisleahere.github.io/godchecker-redesign/">view the site</a></button>
+                </div>
+                <img src="img/pantone2.jpg">
+            </div>
+      </a>
     </div>
   </div>
 
@@ -298,7 +359,7 @@
 
           <div class="five columns">
             <div class="colour-block">
-              <h3>I make things work. Let me show you.</h3>
+              <h3><b>I make things work.</b> Let me show you.</h3>
                 <hr>
             </div>  
           </div>
@@ -309,20 +370,20 @@
 
               <div class="six columns">
                 <button>
-                  <a href="mailto:leadesousa@hotmail.com?Subject=Hello" target="_top""><i class="fa fa-envelope" aria-hidden="true"></i>drop a mail</a>
+                  <a href="mailto:leadesousa@hotmail.com?Subject=Hello" target="_top""><!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->drop a mail</a>
                 </button>
               </div>
 
               <div class="six columns">
                  <button>
-                  <a href="tel:+27815000896"><i class="fa fa-phone" aria-hidden="true"></i>give a shout</a>
+                  <a href="tel:+27815000896"><!-- <i class="fa fa-phone" aria-hidden="true"></i> -->give a shout</a>
                 </button>
               </div>
 
 
               <div class="twelve columns">
                 <button>
-                  <a href="images/Portfolio.pdf" download><i class="fa fa-download"></i>download resume</a>
+                  <a href="images/Portfolio.pdf" download><!-- <i class="fa fa-download"></i> -->download resume</a>
                 </button>
               </div>
 
@@ -336,7 +397,7 @@
 
     <!-- <div class="dotted"><hr></div> -->
 
-    
+
       </div>
     </div>
   </section>
@@ -358,13 +419,10 @@
 </div>
 
 <!-- script links -->
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/iziModal-master/js/iziModal.min.js"></script>
 
 <script type="text/javascript" src="js/main.js"></script>
 
