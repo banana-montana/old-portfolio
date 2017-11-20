@@ -168,6 +168,20 @@ hr {
 
 /* introduction */
 
+.introduction {
+  img {
+    width: 100%;
+  }
+}
+
+.display-o {
+  display: block;
+}
+
+.display-m {
+  display: none;
+}
+
 .colour-block {
   // border-radius: 50% 0 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -193,13 +207,15 @@ hr {
 }
 
 .abouttext {
-  padding-right: 8%;
+  padding: 0 5%;
   height: 100%;
   p {
     font-size: 16.5px;
     text-align: justify;  
   }
 }
+
+
 
 /* skills */
 .skillset {
@@ -442,6 +458,13 @@ hr {
 }
 
 /* ----- introduction ----- */
+.display-o {
+  display: none;
+}
+
+.display-m {
+  display: block;
+}
 
 .about {
   padding-top: 30px;  

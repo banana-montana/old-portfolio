@@ -150,6 +150,15 @@ hr {
   width: 100%; }
 
 /* introduction */
+.introduction img {
+  width: 100%; }
+
+.display-o {
+  display: block; }
+
+.display-m {
+  display: none; }
+
 .colour-block {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -172,7 +181,7 @@ hr {
     color: #FFC132; }
 
 .abouttext {
-  padding-right: 8%;
+  padding: 0 5%;
   height: 100%; }
   .abouttext p {
     font-size: 16.5px;
@@ -386,6 +395,10 @@ hr {
     top: -10px;
     right: 15px; }
   /* ----- introduction ----- */
+  .display-o {
+    display: none; }
+  .display-m {
+    display: block; }
   .about {
     padding-top: 30px; }
   .colour-block {

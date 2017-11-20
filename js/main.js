@@ -8,7 +8,6 @@ function setHeight() {
     body.style.height = windowHeight + 'px';
 }
 
-
 // mobile nav menu
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
@@ -16,6 +15,32 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 };
+
+
+function equalHeights() {
+  // Get equal heights
+  // Select and loop the container element of the elements you want to equalise
+  $('section').each(function(){  
+    // Cache the highest
+    var highestBox = 0;
+    
+    // Select and loop the elements you want to equalise
+    $('.equal-height', this).each(function(){
+      
+      // If this box is higher than the cached highest then store it
+      if($(this).height() > highestBox) {
+        highestBox = $(this).height(); 
+      }
+    
+    });  
+          
+    // Set the height of all those children to whichever was highest 
+    $('.equal-height',this).height(highestBox);            
+  }); 
+}
+
+
+
 $(document).on('click', '#myNav a', function (event) {
     closeNav()
 });
@@ -246,3 +271,10 @@ $('#web05').iziModal({
     closeButton: true,
     width: 800,
 });
+
+// WordPress
+$(window).on('resize', equalHeights());
+
+$(document).ready(function(){
+  equalHeights();
+})
