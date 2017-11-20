@@ -1,12 +1,21 @@
 /* fonts */
 /* colours */
 html {
-  max-width: 100%;
-  background: #f2f2f2; }
+  max-width: 100%; }
 
 .container {
   max-width: 1100px;
   margin: 0 auto; }
+
+/* section colours */
+.grey01 {
+  background-color: #f8f8f8; }
+
+.grey02 {
+  background-color: #f2f2f2; }
+
+.grey03 {
+  background-color: #f8f8f8; }
 
 /* ---- footer ---- */
 .footer-icons {
@@ -193,7 +202,7 @@ hr {
     -o-transition: all 0.6s ease;
     transition: all 0.6s ease; }
 
-.dotted hr, .dotted02 hr {
+.dotted hr, .dotted02 hr, .dotted03 hr {
   margin: 0 1.5%;
   border-width: 0;
   color: #FFC132;
@@ -203,9 +212,13 @@ hr {
 .dotted02 hr {
   margin-top: 30px; }
 
+.dotted03 hr {
+  margin-bottom: 30px; }
+
 /* ----- work section ----- */
 .portfolio-grid {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 30px; }
 
 /* portfolio filter buttons */
 .filter-menu {
@@ -363,7 +376,7 @@ hr {
     padding-top: 25px;
     font-size: 22pt; }
   .filter-menu {
-    margin: 20px 0; }
+    margin: 0 0 20px 0; }
     .filter-menu .button {
       font-size: 18pt;
       margin: 8px 23px; }
@@ -411,7 +424,11 @@ hr {
     margin: 0 10px; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 100%; } }
+    width: 100%; }
+  .content h4 {
+    font-size: 21pt; }
+  .content p {
+    font-size: 13pt; } }
 
 /* ---- large mobile ---- */
 @media only screen and (min-width: 640px) and (max-width: 768px) {
@@ -425,7 +442,13 @@ hr {
     right: 48px; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 50%; } }
+    width: 50%; }
+  .skills {
+    padding: 0; }
+  .content h4 {
+    font-size: 14pt; }
+  .content p {
+    font-size: 9pt; } }
 
 /* ---- phablet ---- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -434,7 +457,15 @@ hr {
     display: none; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .skills {
+    padding: 0 8px; }
+  .colour-block {
+    height: 250px; }
+  .content h4 {
+    font-size: 13pt; }
+  .content p {
+    font-size: 9pt; } }
 
 /* ---- tablet ---- */
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {

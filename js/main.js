@@ -12,11 +12,13 @@ function setHeight() {
 // mobile nav menu
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
-}
-
+};
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
-}
+};
+$(document).on('click', '#myNav a', function (event) {
+    closeNav()
+});
 
 
 //code for portfolio image grid
@@ -89,6 +91,7 @@ $('#print01').iziModal({
     transitionInOverlay: 'fadeIn',
     transitionOutOverlay: 'fadeOut',
     closeButton: true,
+    width: 800,
 });
 
 // Godchecker Redesign
@@ -105,6 +108,7 @@ $('#web01').iziModal({
     transitionInOverlay: 'fadeIn',
     transitionOutOverlay: 'fadeOut',
     closeButton: true,
+    width: 800,
 });
 
 // Fruitea
@@ -121,6 +125,7 @@ $('#print02').iziModal({
     transitionInOverlay: 'fadeIn',
     transitionOutOverlay: 'fadeOut',
     closeButton: true,
+    width: 800,
 });
 
 // London Donut Co.
@@ -137,9 +142,10 @@ $('#web02').iziModal({
     transitionInOverlay: 'fadeIn',
     transitionOutOverlay: 'fadeOut',
     closeButton: true,
+    width: 800,
 });
 
-// London Donut Co.
+// Pantone
 $(document).on('click', '.web03', function (event) {
     event.preventDefault();
     $('#web03').iziModal('open');
@@ -153,4 +159,90 @@ $('#web03').iziModal({
     transitionInOverlay: 'fadeIn',
     transitionOutOverlay: 'fadeOut',
     closeButton: true,
+    width: 800,
+});
+
+// Manhattan Marshmallows
+$(document).on('click', '.print03', function (event) {
+    event.preventDefault();
+    $('#print03').iziModal('open');
+});
+
+$('#print03').iziModal({
+    title: '<h3>Manhattan Marshmallows</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
+});
+
+// Night of 1000 Drawings
+$(document).on('click', '.print04', function (event) {
+    event.preventDefault();
+    $('#print04').iziModal('open');
+});
+
+$('#print04').iziModal({
+    title: '<h3>Night of 1000 Drawings</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
+});
+
+// Generation Y
+$(document).on('click', '.print05', function (event) {
+    event.preventDefault();
+    $('#print05').iziModal('open');
+});
+
+$('#print05').iziModal({
+    title: '<h3>Generation Y Magazine</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
+});
+
+// Color Factory Co.
+$(document).on('click', '.web04', function (event) {
+    event.preventDefault();
+    $('#web04').iziModal('open');
+});
+
+$('#web04').iziModal({
+    title: '<h3>Color Factory Co.</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
+});
+
+// WordPress
+$(document).on('click', '.web05', function (event) {
+    event.preventDefault();
+    $('#web05').iziModal('open');
+});
+
+$('#web05').iziModal({
+    title: '<h3>WordPress theme</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
 });

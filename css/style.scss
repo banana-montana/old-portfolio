@@ -9,12 +9,22 @@ $secondary-color: #0BA094;
 
 html {
   max-width: 100%;
-  background: #f2f2f2;
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+/* section colours */
+.grey01 {
+  background-color: #f8f8f8;
+}
+.grey02 {
+  background-color: #f2f2f2;
+}
+.grey03 {
+  background-color: #f8f8f8;
 }
 
 /* ---- footer ---- */
@@ -214,7 +224,7 @@ hr {
   }
 }
 
-.dotted hr, .dotted02 hr {
+.dotted hr, .dotted02 hr, .dotted03 hr {
   margin: 0 1.5%;
   border-width: 0;
   color: $primary-color;
@@ -226,10 +236,15 @@ hr {
   margin-top: 30px
 }
 
+.dotted03 hr {
+  margin-bottom: 30px
+}
+
 /* ----- work section ----- */
 .portfolio-grid {
   // background-color: #a2a2a2;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 /* portfolio filter buttons */
@@ -363,6 +378,7 @@ hr {
 .iziModal {
   img {
     width: 100%;
+    // padding: 5%;
   }
   button {
     padding: 0;
@@ -409,7 +425,7 @@ hr {
   }
 
 .filter-menu {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   .button {
     font-size: 18pt;
     margin: 8px 23px;
@@ -487,6 +503,17 @@ hr {
   .one-third.column {
     width: 100%;
   }
+
+  .content {
+    h4 {
+    font-size: 21pt;
+    }
+    p {
+      font-size: 13pt;
+    }
+  }
+
+
 }
 
 
@@ -511,6 +538,18 @@ hr {
     width: 50%;
   }
 
+  .skills {
+    padding: 0;
+  }
+
+  .content {
+    h4 {
+    font-size: 14pt;
+    }
+    p {
+      font-size: 9pt;
+    }
+  }
 }
 
 /* ---- phablet ---- */
@@ -524,6 +563,24 @@ hr {
   .one-third.column {
     width: 33.33%;
   }
+
+  .skills {
+    padding: 0 8px;
+  }
+
+  .colour-block {
+    height: 250px;
+  }
+
+  .content {
+    h4 {
+      font-size: 13pt;
+    }
+    p {
+      font-size: 9pt;
+    }
+  }
+
 }
 
 /* ---- tablet ---- */
