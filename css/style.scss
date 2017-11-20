@@ -33,6 +33,13 @@ html {
   font-size: 20pt;
   margin: 30px 0;
   text-align: center;
+  i {
+    transition: all 0.4s ease;
+    &:hover {
+      color: $primary-color;
+      transition: all 0.6s ease;
+    }
+  }
 }
 
 .fa {
@@ -426,6 +433,12 @@ nav {
   padding: 15px 20px 15px 0;
 }
 
+.modal-styling2 {
+  margin: 0;
+  color: black;
+  padding: 3%;
+}
+
 .iziModal {
   img {
     width: 100%;
@@ -564,7 +577,15 @@ nav {
   width: 100%;
 }
 
+.modal-styling {
+  padding: 10px 15px;
+}
 
+.iziModal {
+  button {
+    padding: 0;
+    margin: 0 0 15px 15px;
+  }
 }
 
 
@@ -699,4 +720,5 @@ nav {
     width: 25%;
   }
 
+}
 }

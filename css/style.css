@@ -23,6 +23,15 @@ html {
   font-size: 20pt;
   margin: 30px 0;
   text-align: center; }
+  .footer-icons i {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .footer-icons i:hover {
+      color: #FFC132;
+      -webkit-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease; }
 
 .fa {
   margin: 0 20px;
@@ -383,6 +392,11 @@ nav {
   color: black;
   padding: 15px 20px 15px 0; }
 
+.modal-styling2 {
+  margin: 0;
+  color: black;
+  padding: 3%; }
+
 .iziModal img {
   width: 100%; }
 
@@ -475,10 +489,15 @@ nav {
     margin: 0 10px; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 100%; } }
+    width: 100%; }
+  .modal-styling {
+    padding: 10px 15px; }
+  .iziModal button {
+    padding: 0;
+    margin: 0 0 15px 15px; }
+  /* ---- large mobile ---- */ }
 
-/* ---- large mobile ---- */
-@media only screen and (min-width: 550px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 550px) and (max-width: 768px) {
   .tab-display {
     display: block; }
     .tab-display img {
@@ -486,7 +505,7 @@ nav {
   .tab-display-none {
     display: none; } }
 
-@media only screen and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 640px) and (max-width: 768px) {
   /* ---- nav ---- */
   nav {
     display: none; }
@@ -505,8 +524,10 @@ nav {
   .content p {
     font-size: 9pt; } }
 
-/* ---- phablet ---- */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  /* ---- phablet ---- */ }
+
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 768px) and (max-width: 1023px) {
   /* ---- nav ---- */
   nav {
     display: none; }
@@ -522,8 +543,10 @@ nav {
   .content p {
     font-size: 10pt; } }
 
-/* ---- tablet ---- */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  /* ---- tablet ---- */ }
+
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1024px) and (max-width: 1365px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
@@ -531,8 +554,10 @@ nav {
   .one-third.column {
     width: 33.33%; } }
 
-/* ---- desktop ---- */
-@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  /* ---- desktop ---- */ }
+
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1366px) and (max-width: 1599px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
@@ -540,8 +565,10 @@ nav {
   .one-third.column {
     width: 33.33%; } }
 
-/* ---- large desktop ---- */
-@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  /* ---- large desktop ---- */ }
+
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1600px) and (max-width: 1900px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
@@ -549,7 +576,7 @@ nav {
   .one-third.column {
     width: 33.33%; } }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1500px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
