@@ -213,6 +213,18 @@ nav {
     font-size: 16.5px;
     text-align: justify; }
 
+.center {
+  text-align: center;
+  margin: 0 0 40px 0; }
+  .center i {
+    color: #202020;
+    font-size: 25pt;
+    text-align: center; }
+    .center i:hover {
+      color: #FFC132; }
+  .center button {
+    padding: 0 15px; }
+
 /* skills */
 .skillset {
   padding: 20px; }
@@ -365,9 +377,6 @@ nav {
   display: block; }
 
 /* ----- say hi / contact section ----- */
-.abouttext i {
-  font-size: 14pt; }
-
 .contact-footer {
   padding-top: 40px; }
   .contact-footer button {
@@ -448,25 +457,15 @@ nav {
   .abouttext {
     padding: 15px 0 0 0; }
     .abouttext p {
+      padding: 15px 0 0 0;
       font-size: 12pt; }
   .about {
     padding-top: 30px; }
   .colour-block {
-    margin-bottom: 30px;
-    height: 220px; }
+    height: 50%; }
     .colour-block h3 {
-      text-align: right;
-      font-size: 23pt;
-      font-weight: 500;
-      padding: 15% 6% 0 25%;
-      margin-right: -25%; }
-    .colour-block hr {
-      text-align: right;
-      margin-right: -15%;
-      margin-left: 70%;
-      border-color: #FFC132;
-      border-width: 4px;
-      color: #FFC132; }
+      font-size: 22pt;
+      padding: 15% 6% 0 20%; }
   .skillset {
     padding: 0 20px 20px 20px; }
   .skills {
@@ -494,18 +493,20 @@ nav {
     padding: 10px 15px; }
   .iziModal button {
     padding: 0;
-    margin: 0 0 15px 15px; }
-  /* ---- large mobile ---- */ }
+    margin: 0 0 15px 15px; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 550px) and (max-width: 768px) {
+/* ---- large mobile ---- */
+@media only screen and (min-width: 550px) and (max-width: 768px) {
   .tab-display {
     display: block; }
     .tab-display img {
       padding: 15px 0; }
   .tab-display-none {
-    display: none; } }
+    display: none; }
+  .colour-block {
+    height: 290px; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 640px) and (max-width: 768px) {
+@media only screen and (min-width: 640px) and (max-width: 768px) {
   /* ---- nav ---- */
   nav {
     display: none; }
@@ -522,12 +523,12 @@ nav {
   .content h4 {
     font-size: 15pt; }
   .content p {
-    font-size: 9pt; } }
+    font-size: 9pt; }
+  .colour-block {
+    height: 50%; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) {
-  /* ---- phablet ---- */ }
-
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 768px) and (max-width: 1023px) {
+/* ---- phablet ---- */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* ---- nav ---- */
   nav {
     display: none; }
@@ -537,46 +538,52 @@ nav {
   .skills {
     padding: 0 8px; }
   .colour-block {
-    height: 250px; }
+    height: 45%; }
   .content h4 {
     font-size: 14pt; }
   .content p {
     font-size: 10pt; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) {
-  /* ---- tablet ---- */ }
-
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1024px) and (max-width: 1365px) {
+/* ---- tablet ---- */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .colour-block {
+    height: 50%; }
+    .colour-block hr {
+      margin-top: 2rem; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) {
-  /* ---- desktop ---- */ }
-
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1366px) and (max-width: 1599px) {
+/* ---- desktop ---- */
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .colour-block {
+    height: 50%; }
+    .colour-block hr {
+      margin-top: 1rem; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) {
-  /* ---- large desktop ---- */ }
-
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1600px) and (max-width: 1900px) {
+/* ---- large desktop ---- */
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }
   /* ---- override column structure ---- */
   .one-third.column {
-    width: 33.33%; } }
+    width: 33.33%; }
+  .colour-block {
+    height: 50%; }
+    .colour-block hr {
+      margin-top: 1rem; } }
 
-@media only screen and (min-width: 320px) and (max-width: 640px) and (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
   /* ---- nav ---- */
   .mobilenav {
     display: none; }

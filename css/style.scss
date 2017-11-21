@@ -235,7 +235,21 @@ nav {
   }
 }
 
-
+.center {
+  text-align: center;
+  margin: 0 0 40px 0;
+  i {
+    color: #202020;
+    font-size: 25pt;
+    text-align: center;
+  &:hover {
+    color: $primary-color;
+  }
+  }
+  button {
+    padding: 0 15px;
+  }
+}
 
 /* skills */
 .skillset {
@@ -397,11 +411,6 @@ nav {
 
 
 /* ----- say hi / contact section ----- */
-.abouttext {
-  i {
-    font-size: 14pt;
-  }
-}
 
 .contact-footer {
   padding-top: 40px;
@@ -409,7 +418,6 @@ nav {
     border: none;
   }
 }
-
 
 /* -- modal custom styling -- */
 .iziModal .iziModal-header {
@@ -509,7 +517,8 @@ nav {
 .abouttext {
   padding: 15px 0 0 0;
   p {
-  font-size: 12pt;
+    padding: 15px 0 0 0;
+    font-size: 12pt;
   }
 }
 
@@ -518,22 +527,10 @@ nav {
 }
 
 .colour-block {
-  margin-bottom: 30px;
-  height: 220px;
+  height: 50%;
   h3 {
-    text-align: right;
-    font-size: 23pt;
-    font-weight: 500;
-    padding: 15% 6% 0 25%;
-    margin-right: -25%;
-  }
-  hr {
-    text-align: right;
-    margin-right: -15%;
-    margin-left: 70%;
-    border-color: $primary-color;
-    border-width: 4px;
-    color: $primary-color;
+    font-size: 22pt;
+    padding: 15% 6% 0 20%;
   }
 }
 
@@ -587,7 +584,7 @@ nav {
     margin: 0 0 15px 15px;
   }
 }
-
+}
 
 /* ---- large mobile ---- */
 
@@ -601,6 +598,10 @@ nav {
 
   .tab-display-none {
     display: none;
+  }
+
+  .colour-block {
+    height: 290px;
   }
 }
 
@@ -636,6 +637,10 @@ nav {
       font-size: 9pt;
     }
   }
+
+  .colour-block {
+    height: 50%;
+  }
 }
 
 /* ---- phablet ---- */
@@ -655,7 +660,7 @@ nav {
   }
 
   .colour-block {
-    height: 250px;
+    height: 45%;
   }
 
   .content {
@@ -681,6 +686,13 @@ nav {
   .one-third.column {
     width: 33.33%;
   }
+
+  .colour-block {
+    height: 50%;
+    hr {
+      margin-top: 2rem;
+    }
+  }
 }
 
 /* ---- desktop ---- */
@@ -693,6 +705,13 @@ nav {
   /* ---- override column structure ---- */
   .one-third.column {
     width: 33.33%;
+  }
+
+  .colour-block {
+    height: 50%;
+    hr {
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -707,6 +726,13 @@ nav {
   .one-third.column {
     width: 33.33%;
   }
+
+  .colour-block {
+    height: 50%;
+    hr {
+      margin-top: 1rem;
+    }
+  }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -720,5 +746,4 @@ nav {
     width: 25%;
   }
 
-}
 }
