@@ -272,9 +272,45 @@ $('#web05').iziModal({
     width: 800,
 });
 
-// WordPress
+// Resizing project modal cards to be equal
 $(window).on('resize', equalHeights());
 
 $(document).ready(function(){
   equalHeights();
 })
+
+
+// Showreel
+$(document).on('click', '.animation01', function (event) {
+    event.preventDefault();
+    $('#animation01').iziModal('open');
+});
+
+$('#animation01').iziModal({
+    title: '<h3>Film Showreel 2017</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
+});
+
+// Self Promo
+$(document).on('click', '.animation02', function (event) {
+    event.preventDefault();
+    $('#animation02').iziModal('open');
+});
+
+$('#animation02').iziModal({
+    title: '<h3>Self Promotion Video</h3>',
+    // subtitle: '<p>illustration</p>',
+    headerColor: '#0BA094',
+    borderBottom: false,
+    transitionInOverlay: 'fadeIn',
+    transitionOutOverlay: 'fadeOut',
+    closeButton: true,
+    width: 800,
+});
+

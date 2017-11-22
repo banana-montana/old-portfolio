@@ -217,13 +217,22 @@ nav {
   text-align: center;
   margin: 0 0 40px 0; }
   .center i {
-    color: #202020;
-    font-size: 25pt;
-    text-align: center; }
+    color: #181818;
+    font-size: 20pt;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
     .center i:hover {
-      color: #FFC132; }
+      -webkit-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      color: #383838; }
   .center button {
-    padding: 0 15px; }
+    margin: 0 2%;
+    padding: 7px 10px 0 10px;
+    background-color: #f2f2f2;
+    height: 10%; }
 
 /* skills */
 .skillset {
@@ -493,7 +502,15 @@ nav {
     padding: 10px 15px; }
   .iziModal button {
     padding: 0;
-    margin: 0 0 15px 15px; } }
+    margin: 0 0 15px 15px; }
+  .center {
+    margin: 0 0 25px 0; }
+    .center i {
+      font-size: 23pt; }
+    .center button {
+      margin: 0 2%;
+      padding: 7px 15px 0 15px;
+      height: 10%; } }
 
 /* ---- large mobile ---- */
 @media only screen and (min-width: 550px) and (max-width: 768px) {
@@ -525,7 +542,15 @@ nav {
   .content p {
     font-size: 9pt; }
   .colour-block {
-    height: 50%; } }
+    height: 50%; }
+  .center {
+    margin: 0 0 25px 0; }
+    .center i {
+      font-size: 20pt; }
+    .center button {
+      margin: 0 1%;
+      padding: 7px 0px 0 0px;
+      height: 10%; } }
 
 /* ---- phablet ---- */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -542,7 +567,15 @@ nav {
   .content h4 {
     font-size: 14pt; }
   .content p {
-    font-size: 10pt; } }
+    font-size: 10pt; }
+  .center {
+    margin: 0 0 25px 0; }
+    .center i {
+      font-size: 20pt; }
+    .center button {
+      margin: 0 1%;
+      padding: 7px 10px 0 10px;
+      height: 10%; } }
 
 /* ---- tablet ---- */
 @media only screen and (min-width: 1024px) and (max-width: 1365px) {

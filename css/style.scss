@@ -239,17 +239,23 @@ nav {
   text-align: center;
   margin: 0 0 40px 0;
   i {
-    color: #202020;
-    font-size: 25pt;
+    color: #181818;
+    font-size: 20pt;
     text-align: center;
+    transition: all 0.4s ease;
   &:hover {
-    color: $primary-color;
+    transition: all 0.6s ease;
+    color: #383838;
   }
   }
   button {
-    padding: 0 15px;
+    margin: 0 2%;
+    padding: 7px 10px 0 10px;
+    background-color: #f2f2f2;
+    height: 10%;
   }
 }
+
 
 /* skills */
 .skillset {
@@ -584,6 +590,21 @@ nav {
     margin: 0 0 15px 15px;
   }
 }
+
+.center {
+  margin: 0 0 25px 0;
+  i {
+    font-size: 23pt;
+  }
+  button {
+    margin: 0 2%;
+    padding: 7px 15px 0 15px;
+    height: 10%;
+  }
+}
+
+
+
 }
 
 /* ---- large mobile ---- */
@@ -606,41 +627,54 @@ nav {
 }
 
 @media only screen and (min-width:640px) and (max-width:768px) {
-  /* ---- nav ---- */
-  nav {
-    display: none
-  }
+/* ---- nav ---- */
+nav {
+  display: none
+}
 
-  .overlay-content {
-    top: 15%;
-  }
+.overlay-content {
+  top: 15%;
+}
 
-  .overlay .closebtn {
-    top: -10px;
-    right: 48px;
-  }
+.overlay .closebtn {
+  top: -10px;
+  right: 48px;
+}
 
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 50%;
-  }
+/* ---- override column structure ---- */
+.one-third.column {
+  width: 50%;
+}
 
-  .skills {
-    padding: 0;
-  }
+.skills {
+  padding: 0;
+}
 
-  .content {
-    h4 {
-    font-size: 15pt;
-    }
-    p {
-      font-size: 9pt;
-    }
+.content {
+  h4 {
+  font-size: 15pt;
   }
+  p {
+    font-size: 9pt;
+  }
+}
 
-  .colour-block {
-    height: 50%;
+.colour-block {
+  height: 50%;
+}
+
+.center {
+  margin: 0 0 25px 0;
+  i {
+    font-size: 20pt;
   }
+  button {
+    margin: 0 1%;
+    padding: 7px 0px 0 0px;
+    height: 10%;
+  }
+}
+
 }
 
 /* ---- phablet ---- */
@@ -671,6 +705,18 @@ nav {
       font-size: 10pt;
     }
   }
+
+.center {
+  margin: 0 0 25px 0;
+  i {
+    font-size: 20pt;
+  }
+  button {
+    margin: 0 1%;
+    padding: 7px 10px 0 10px;
+    height: 10%;
+  }
+}
 
 }
 
