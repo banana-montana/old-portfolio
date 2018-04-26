@@ -4,18 +4,11 @@ html {
   max-width: 100%; }
 
 .container {
-  max-width: 1100px;
+  max-width: 1250px;
   margin: 0 auto; }
 
-/* section colours */
-.grey01 {
-  background-color: #f8f8f8; }
-
-.grey02 {
-  background-color: #f2f2f2; }
-
-.grey03 {
-  background-color: #f8f8f8; }
+main {
+  font-family: "Montserrat", arial, helvetica, sans-serif; }
 
 /* ---- footer ---- */
 .footer-icons {
@@ -39,55 +32,12 @@ html {
 
 /* ---------- site ---------- */
 /* ---- nav menu ---- */
-main {
-  font-family: "Questrial", "Raleway", helvetica, sans-serif; }
-
-nav {
-  text-transform: uppercase;
-  font-family: "Raleway", helvetica, arial, sans-serif;
-  color: #0BA094;
-  padding-top: 37px; }
-  nav li, nav h3 {
-    display: inline; }
-  nav ul {
-    margin: 0px; }
-    nav ul a {
-      float: right;
-      padding: 20px 0 0px 50px;
-      text-decoration: none;
-      list-style: none;
-      color: #0BA094;
-      font-size: 14pt;
-      font-weight: 600;
-      -webkit-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      transition: all 0.4s ease; }
-      nav ul a:hover {
-        color: #FFC132;
-        -webkit-transition: all 0.6s ease;
-        -o-transition: all 0.6s ease;
-        transition: all 0.6s ease; }
-  nav li h3 {
-    font-size: 28pt;
-    letter-spacing: 2px;
-    margin: 0; }
-  nav hr {
-    background-image: -webkit-gradient(linear, left top, right top, from(#0BA094), to(#FFC132));
-    background-image: -webkit-linear-gradient(left, #0BA094, #FFC132);
-    background-image: -o-linear-gradient(left, #0BA094, #FFC132);
-    background-image: linear-gradient(to right, #0BA094, #FFC132);
-    /* Standard */
-    height: 6px;
-    border-width: 0px;
-    margin: 5px 0 0 0;
-    color: linear-gradient(#0BA094, #FFC132); }
-
-/* ---- mobile nav menu ---- */
+/* pop up overlay  */
 .overlay {
   height: 0%;
   width: 100%;
   position: fixed;
-  font-family: "Raleway", helvetica, arial, sans-serif;
+  font-family: "Montserrat", arial, helvetica, sans-serif;
   z-index: 1;
   top: 0;
   left: 0;
@@ -130,32 +80,22 @@ nav {
   margin-top: 30px; }
 
 .mobilenav {
-  color: #0BA094;
-  font-family: "Raleway", helvetica, arial, sans-serif; }
+  color: black;
+  font-family: "Montserrat", arial, helvetica, sans-serif; }
   .mobilenav p {
     margin: 0;
     padding-top: 35px;
     float: right;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer; }
   .mobilenav h3 {
     float: left;
-    font-size: 28pt;
+    font-size: 25px;
     letter-spacing: 2px;
     margin: 0;
     text-transform: uppercase;
-    color: #0BA094;
+    color: #0064AC;
     padding-top: 37px; }
-  .mobilenav hr {
-    background-image: -webkit-gradient(linear, left top, right top, from(#0BA094), to(#FFC132));
-    background-image: -webkit-linear-gradient(left, #0BA094, #FFC132);
-    background-image: -o-linear-gradient(left, #0BA094, #FFC132);
-    background-image: linear-gradient(to right, #0BA094, #FFC132);
-    /* Standard */
-    height: 4px;
-    border-width: 0px;
-    margin: 5px 0 0 0;
-    color: linear-gradient(#0BA094, #FFC132); }
 
 .overlay .closebtn {
   font-weight: 500;
@@ -167,109 +107,39 @@ nav {
 .clearfix {
   clear: both; }
 
-/* ---- hello / about section ---- */
-.about {
-  padding-top: 50px;
-  width: 100%; }
-
 /* introduction */
-.introduction img {
-  width: 100%; }
-
-.display-o {
-  display: block; }
-
-.display-m {
-  display: none; }
-
-.tab-display {
-  display: none; }
-
-.colour-block {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #0BA094;
-  margin: 0 0 0 10%;
-  width: 70%;
-  height: 170px; }
-  .colour-block h3 {
-    text-align: right;
-    font-size: 24pt;
-    font-weight: 500;
-    padding: 10% 6% 0 25%;
-    margin-right: -25%; }
-  .colour-block hr {
-    text-align: right;
-    margin-right: -15%;
-    margin-left: 70%;
-    border-color: #FFC132;
-    border-width: 4px;
-    color: #FFC132; }
-
-.abouttext {
-  padding: 0 5%;
-  height: 100%; }
-  .abouttext p {
-    font-size: 16.5px;
-    text-align: justify; }
-
-.center {
-  text-align: center;
-  margin: 0 0 40px 0; }
-  .center i {
-    color: #181818;
-    font-size: 20pt;
-    text-align: center;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease; }
-    .center i:hover {
-      -webkit-transition: all 0.6s ease;
-      -o-transition: all 0.6s ease;
-      transition: all 0.6s ease;
-      color: #383838; }
-  .center button {
-    margin: 0 2%;
-    padding: 7px 10px 0 10px;
-    background-color: #f2f2f2;
-    height: 10%; }
+.introduction .introtext {
+  padding: 15% 0; }
 
 /* skills */
-.skillset {
-  padding: 20px; }
-
-.skills {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease; }
-  .skills img {
+.skill-set {
+  font-family: "Montserrat", arial, helvetica, sans-serif;
+  color: white; }
+  .skill-set img {
+    padding: 12% 0;
     width: 80%; }
-  .skills h3 {
-    margin: 0 0 10px 0;
-    font-size: 20pt;
-    font-weight: 600;
-    letter-spacing: 1pt; }
-  .skills:hover {
-    color: #0BA094;
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease; }
+  .skill-set h3 {
+    padding: 5% 0;
+    font-weight: 500;
+    font-size: 40px; }
+  .skill-set p {
+    font-weight: 300; }
 
-.dotted hr, .dotted02 hr, .dotted03 hr {
-  margin: 0 1.5%;
-  border-width: 0;
-  color: #FFC132;
-  border-color: #FFC132;
-  border-top: dotted 4px; }
+.yellow {
+  background-color: #F9B730; }
+  .yellow h3, .yellow p {
+    text-align: right; }
 
-.dotted02 hr {
-  margin-top: 30px; }
+.blue {
+  background-color: #0064AC; }
+  .blue img {
+    padding: 0 12% 12% 12%;
+    width: 120%; }
 
-.dotted03 hr {
-  margin-bottom: 30px; }
+.red {
+  background-color: #C72A22; }
+  .red h3, .red p {
+    text-align: right; }
 
 /* ----- work section ----- */
 .portfolio-grid {
@@ -281,7 +151,7 @@ nav {
   padding: 30px 0 15px 0;
   text-align: center; }
   .filter-menu .button {
-    font-family: "Questrial", "Raleway", helvetica, sans-serif;
+    font-family: "Montserrat", arial, helvetica, sans-serif;
     display: inline-block;
     margin: 8px 30px;
     padding: 0;
@@ -439,15 +309,12 @@ nav {
 
 /* ---- media queries ---- */
 /* correcting Skeleton CSS */
-@media (min-width: 550px) {
-  .one-third {
-    margin-left: 0; } }
-
 /* ---- mobile ---- */
 @media only screen and (min-width: 320px) and (max-width: 640px) {
   /* ---- nav ---- */
-  nav {
-    display: none; }
+  /*nav {
+    display: none
+  }*/
   .mobilenav p {
     padding-top: 18px; }
   .mobilenav h3 {
@@ -513,113 +380,7 @@ nav {
       height: 10%; } }
 
 /* ---- large mobile ---- */
-@media only screen and (min-width: 550px) and (max-width: 768px) {
-  .tab-display {
-    display: block; }
-    .tab-display img {
-      padding: 15px 0; }
-  .tab-display-none {
-    display: none; }
-  .colour-block {
-    height: 290px; } }
-
-@media only screen and (min-width: 640px) and (max-width: 768px) {
-  /* ---- nav ---- */
-  nav {
-    display: none; }
-  .overlay-content {
-    top: 15%; }
-  .overlay .closebtn {
-    top: -10px;
-    right: 48px; }
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 50%; }
-  .skills {
-    padding: 0; }
-  .content h4 {
-    font-size: 15pt; }
-  .content p {
-    font-size: 9pt; }
-  .colour-block {
-    height: 50%; }
-  .center {
-    margin: 0 0 25px 0; }
-    .center i {
-      font-size: 20pt; }
-    .center button {
-      margin: 0 1%;
-      padding: 7px 0px 0 0px;
-      height: 10%; } }
-
 /* ---- phablet ---- */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* ---- nav ---- */
-  nav {
-    display: none; }
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 33.33%; }
-  .skills {
-    padding: 0 8px; }
-  .colour-block {
-    height: 45%; }
-  .content h4 {
-    font-size: 14pt; }
-  .content p {
-    font-size: 10pt; }
-  .center {
-    margin: 0 0 25px 0; }
-    .center i {
-      font-size: 20pt; }
-    .center button {
-      margin: 0 1%;
-      padding: 7px 10px 0 10px;
-      height: 10%; } }
-
 /* ---- tablet ---- */
-@media only screen and (min-width: 1024px) and (max-width: 1365px) {
-  /* ---- nav ---- */
-  .mobilenav {
-    display: none; }
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 33.33%; }
-  .colour-block {
-    height: 50%; }
-    .colour-block hr {
-      margin-top: 2rem; } }
-
 /* ---- desktop ---- */
-@media only screen and (min-width: 1366px) and (max-width: 1599px) {
-  /* ---- nav ---- */
-  .mobilenav {
-    display: none; }
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 33.33%; }
-  .colour-block {
-    height: 50%; }
-    .colour-block hr {
-      margin-top: 1rem; } }
-
 /* ---- large desktop ---- */
-@media only screen and (min-width: 1600px) and (max-width: 1900px) {
-  /* ---- nav ---- */
-  .mobilenav {
-    display: none; }
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 33.33%; }
-  .colour-block {
-    height: 50%; }
-    .colour-block hr {
-      margin-top: 1rem; } }
-
-@media only screen and (min-width: 1500px) {
-  /* ---- nav ---- */
-  .mobilenav {
-    display: none; }
-  /* ---- override column structure ---- */
-  .one-third.column {
-    width: 25%; } }

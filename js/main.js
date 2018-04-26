@@ -88,21 +88,6 @@ $('.button1').click(function(){
     $('.show').fadeIn(3000);
 });
 
-
-// code for replicating height of a div in about section
-// var rightdiv = document.getElementsByClassName('abouttext')[0].offsetHeight;
-// var leftdiv = document.getElementsByClassName('colour-block')[0].offsetHeight;
-// if (leftdiv > rightdiv) {
-//   document.getElementsByClassName('abouttext')[0].style.height=leftdiv;
-// }
-// else
-// {
-//     document.getElementsByClassName('colour-block')[0].style.height=rightdiv;
-// };
-
-// Modal - print projects
-
-// FOD 10 Year Poster
 $(document).on('click', '.print01', function (event) {
     event.preventDefault();
     $('#print01').iziModal('open');
